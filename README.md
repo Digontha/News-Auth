@@ -1,4 +1,5 @@
 # React + Vite
+- Live site : https://news-auth-e9948.web.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
