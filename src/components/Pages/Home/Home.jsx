@@ -23,13 +23,17 @@ const Home = () => {
              <BreakingNews></BreakingNews>
              <Navbar></Navbar>
              <div className="grid md:grid-cols-4 grid-cols-1 gap-3 py-10 ">
+             <div className="lg:h-screen lg:overflow-x-scroll">
              <RightSideNav></RightSideNav>
-                <div className="col-span-2 ">
+             </div>
+                <div className="col-span-2 lg:h-screen lg:overflow-x-scroll">
                     {
                         news.map(item=> <News key={item.id}  item={item}></News>)
                     }
                 </div>
-             <LeftSideNav></LeftSideNav>
+            <div className="lg:h-screen lg:overflow-x-scroll">
+            <LeftSideNav></LeftSideNav>
+            </div>
              </div>
         </div>
     );
